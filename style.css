@@ -1,0 +1,61 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:"Segoe UI",system-ui,sans-serif; }
+
+body {
+    background:#f8fafc;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    color:#0f172a;
+}
+
+.app {
+    width:95%;
+    max-width:750px;
+    background:#ffffff;
+    border-radius:20px;
+    padding:22px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+    margin-top:20px;
+}
+
+header {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+header h1 { color:#1e3a8a; font-size:26px; margin-bottom:5px; }
+header p { color:#64748b; font-size:14px; margin-bottom:8px; }
+
+#themeBtn { padding:6px 12px; border-radius:8px; border:none; cursor:pointer; background:linear-gradient(135deg,#2563eb,#1e40af); color:white; font-size:14px; margin-bottom:10px; }
+
+.input-section input, .input-section textarea {
+    width:100%; margin-bottom:12px; border-radius:12px; border:1px solid #cbd5f5; padding:12px; font-size:16px;
+}
+textarea { height:200px; resize:none; }
+
+.actions { display:flex; gap:10px; margin-bottom:15px; }
+button { flex:1; padding:12px; border-radius:14px; border:none; cursor:pointer; transition:0.3s; }
+button:hover { transform:translateY(-2px); opacity:0.9; }
+
+button#saveBtn { background:linear-gradient(135deg,#2563eb,#1e40af); color:white; }
+button#deleteBtn { background:linear-gradient(135deg,#ef4444,#b91c1c); color:white; }
+button#exportBtn { background:linear-gradient(135deg,#10b981,#047857); color:white; }
+
+.info { margin-bottom:15px; color:#1e293b; font-size:14px; }
+
+.search-section input { width:100%; padding:10px; border-radius:12px; border:1px solid #cbd5f5; margin-bottom:15px; }
+
+.liste-textes ul { list-style:none; padding-left:0; }
+.liste-textes li { background:#f1f5f9; margin-bottom:8px; padding:8px 12px; border-radius:10px; cursor:pointer; transition:0.2s; }
+.liste-textes li:hover { background:#e2e8f0; }
+
+body.dark { background:#0f172a; color:#f8fafc; }
+body.dark .app { background:#1e293b; color:#f8fafc; }
+body.dark .input-section input, body.dark .input-section textarea, body.dark .search-section input { background:#334155; color:#f8fafc; border:1px solid #64748b; }
+body.dark .liste-textes li { background:#334155; color:#f8fafc; }
+body.dark #saveBtn { background:#3b82f6; color:white; }
+body.dark #deleteBtn { background:#ef4444; color:white; }
+body.dark #exportBtn { background:#10b981; color:white; }
