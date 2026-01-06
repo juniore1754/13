@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Site de Losseni - Mes Textes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <header>
+        <h1>Bienvenue sur le site de Losseni</h1>
+        <p id="date"></p>
+        <button id="themeBtn">🌙 Mode Sombre/Clair</button>
+    </header>
+
+    <div class="input-section">
+        <input type="text" id="titre" placeholder="Titre de ton texte">
+        <textarea id="texte" placeholder="Écris ton texte ici..."></textarea>
+    </div>
+
+    <div class="actions">
+        <button id="saveBtn">💾 Enregistrer</button>
+        <button id="deleteBtn">🗑 Effacer</button>
+        <button id="exportBtn">📤 Export TXT</button>
+    </div>
+
+    <div class="info">
+        <p>Nombre de mots : <span id="wordCount">0</span> | Nombre de caractères : <span id="charCount">0</span></p>
+    </div>
+
+    <div class="search-section">
+        <input type="text" id="search" placeholder="Recherche par titre ou contenu...">
+    </div>
+
+    <div class="liste-textes">
+        <h3>Mes textes :</h3>
+        <ul id="textesList"></ul>
+    </div>
+
+    <p id="status"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
